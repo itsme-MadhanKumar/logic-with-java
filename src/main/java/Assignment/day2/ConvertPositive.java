@@ -1,4 +1,4 @@
-package Assignment.week2;
+package Assignment.day2;
 import java.util.Scanner;
 public class ConvertPositive
 {

@@ -1,4 +1,4 @@
-package Assignment.week1;
+package Assignment.day1;
 public class Assignment1
 {
     //Assignment 1:

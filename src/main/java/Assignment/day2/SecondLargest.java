@@ -1,4 +1,4 @@
-package Assignment.week2;
+package Assignment.day2;
 class First
 {
     public int findfirst(int[] arr)
