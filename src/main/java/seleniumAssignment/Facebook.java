@@ -13,6 +13,7 @@ public class Facebook
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.get("https://www.facebook.com/");
+
         List<WebElement> list = driver.findElements(By.xpath("//div[@id='pageFooter']//ul//li//a"));
         list.forEach(a->
         {
