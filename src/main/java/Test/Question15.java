@@ -16,7 +16,7 @@ public class Question15
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.get("https://ecommerce-playground.lambdatest.io/");
-        driver.findElement(By.xpath("(//div[@class='flex-fill'])[2]")).sendKeys("iphone");
+        driver.findElement(By.name("search")).sendKeys("iphone");
         List<WebElement> prices = driver.findElements(By.xpath("//div[@class='price']"));
         System.out.println("Prices of iphones ");
         prices.forEach(a->{
@@ -24,9 +24,13 @@ public class Question15
         });
         System.out.println("Count of the phones : "+prices.size());
         String title = driver.getTitle();
-        if(title.contains("iphone"))
+        if(title.contains("Seach"))
         {
             System.out.println("Title is verified");
+        }
+        else
+        {
+            System.out.println("title is not verified");
         }
         driver.quit();
     }

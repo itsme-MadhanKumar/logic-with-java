@@ -8,6 +8,8 @@ public class Question12
     {
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
+        String s = "sdsd";
+        char[] arr = s.toCharArray();
         for(int i = 1;i<=10;i++)
         {
             System.out.println(n+" * "+i+" = "+(i*n));
